@@ -1,0 +1,56 @@
+@import "/css/nullstyle.css";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/*Variable*/
+:root {
+  --background-color: #1c2023;
+  --button-color: #8856d9;
+  --button-hover: #ff4136;
+  --description-color: #a9c7c7;
+  --text-card-color: #8c96a0;
+  --font-family: "Rubik";
+  --color-link-menu: rgba(255, 255, 255, 0.5);
+  --transition-time: 0.3s;
+}
+body {
+  font-size: 14px;
+  font-weight: normal;
+  background-color: var(--background-color);
+}
+/*Menu*/
+.menu {
+  display: flex;
+}
+.menu_list {
+  display: flex;
+  align-items: center;
+}
+.menu_item {
+  margin: 0 15px;
+}
+.menu_link {
+  font-family: var(--font-family);
+  text-transform: uppercase;
+  color: var(--color-link-menu);
+  transition: color var(--transition-time) ease-in-out;
+}
+.menu_item:first-child {
+  margin-left: 0;
+}
+
+.menu_link:hover {
+  color: var(--button-color);
+}
+.menu__language {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+.menu__button {
+  width: 25px;
+  height: 15px;
+  background: #8856d9;
+  margin-right: 50px;
+  cursor: pointer;
+}
