@@ -1,0 +1,83 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__btn-container {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.menu__button {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.menu__button span,
+.menu__button::before,
+.menu__button::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  top: 50%;
+  background-color: #fff;
+  transition: width var(--transition-time) ease-in-out;
+}
+.menu__button::before {
+  width: 100%;
+  top: 25%;
+}
+.menu__button::after {
+  width: 100%;
+  top: 75%;
+}
+
+.is-active span {
+  width: 100%;
+}
+.is-active::after,
+.is-active::before {
+  width: 50%;
+}
+
+/*  */
+.menu__container {
+  display: flex;
+  align-items: center;
+}
+.menu__list {
+  display: flex;
+  margin-left: 50px;
+  transition: transform var(--transition-time) ease-in;
+}
+.menu__item {
+}
+
+.menu__link {
+  font-family: var(--font-family);
+  text-transform: uppercase;
+  color: var(--color-link-menu);
+  transition: color var(--transition-time) ease-in-out;
+  margin: 0 15px;
+}
+.menu__link-active {
+  color: var(--button-color-first);
+}
+.menu__link:hover {
+  color: var(--button-color-first);
+}
+.menu__language {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu__hiden > .menu__container > .menu__list {
+  transform: translateX(-150%) scale(0);
+}

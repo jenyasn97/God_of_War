@@ -1,6 +1,6 @@
 "use strict";
 
-const menuButton = document.querySelector(".menu__button-container");
+const menuButton = document.querySelector(".menu__btn-container");
 const burger = document.querySelector(".menu__button");
 const blockMenu = document.querySelector(".menu");
 const switchBtns = document.querySelectorAll(".requirements__switch-btn");

@@ -1,5 +1,6 @@
 @import "/css/nullstyle.css";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import "/css/menu.css";
 
 /*Variable*/
 :root {
@@ -21,87 +22,7 @@ body {
   background-color: var(--background-color);
 }
 /*Menu*/
-.menu {
-  display: flex;
-  align-items: center;
-}
 
-.menu__hiden > .menu__block-container {
-  transform: translateX(-150%);
-}
-.menu__hiden > .menu__button-container {
-  margin-right: 0;
-}
-
-.menu__block-container {
-  display: flex;
-  transform: translateX(0);
-  transition: transform var(--transition-time) ease-in-out;
-}
-.menu_list {
-  display: flex;
-}
-.menu_item {
-  margin: 0 15px;
-}
-.menu_link {
-  font-family: var(--font-family);
-  text-transform: uppercase;
-  color: var(--color-link-menu);
-  transition: color var(--transition-time) ease-in-out;
-}
-.menu__link-active {
-  color: var(--button-color-first);
-}
-
-.menu_item:first-child {
-  margin-left: 0;
-}
-
-.menu_link:hover {
-  color: var(--button-color-first);
-}
-.menu__language {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
-  cursor: pointer;
-}
-
-.menu__button-container {
-  position: relative;
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
-  margin-right: 50px;
-}
-.menu__button span,
-.menu__button::before,
-.menu__button::after {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 1px;
-  top: 50%;
-  background-color: #fff;
-  transition: width var(--transition-time) ease-in-out;
-}
-.menu__button::before {
-  width: 100%;
-  top: 25%;
-}
-.menu__button::after {
-  width: 100%;
-  top: 75%;
-}
-
-.is-active span {
-  width: 100%;
-}
-.is-active::after,
-.is-active::before {
-  width: 50%;
-}
 /*end menu*/
 
 /*Clock*/
@@ -395,7 +316,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  
+  justify-content: space-between;
 }
 .cardnews__content-text {
   max-width: 256px;
@@ -405,7 +326,7 @@ body {
 }
 
 .cardnews__content-btn {
-  padding: 30px 7px;
+  padding: 7px 30px;
   background: var(--text-card-color);
 }
 

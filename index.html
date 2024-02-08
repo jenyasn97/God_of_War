@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,206 +8,71 @@
     <title>Gof of War</title>
   </head>
   <body>
-    <div class="menu">
-      <div class="menu__button-container">
-        <div class="menu__button"><span></span></div>
-      </div>
-      <div class="menu__block-container">
-        <nav class="menu__container">
-          <ul class="menu_list">
-            <li class="menu_item">
-              <a href="#" class="menu_link">editions</a>
+    <div class="container">
+      <div class="menu">
+        <div class="menu__container">
+          <div class="menu__btn-container">
+            <div class="menu__button"><span></span></div>
+          </div>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">editions</a>
             </li>
-            <li class="menu_item">
-              <a href="#" class="menu_link">controller</a>
+            <li class="menu__item">
+              <a href="#" class="menu__link">controller</a>
             </li>
-            <li class="menu_item">
-              <a href="#" class="menu_link">about game</a>
+            <li class="menu__item">
+              <a href="#" class="menu__link">about game</a>
             </li>
-            <li class="menu_item">
-              <a href="#" class="menu_link menu__link-active">explore</a>
+            <li class="menu__item">
+              <a href="#" class="menu__link">explore</a>
             </li>
-            <li class="menu_item"><a href="#" class="menu_link">news</a></li>
-            <li class="menu_item"><a href="#" class="menu_link">faq</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">news</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">FAQ</a></li>
+            <li class="menu__item">
+              <select id="language" class="menu__language">
+                english
+                <option value="0">english</option>
+                <option value="1">russian</option>
+              </select>
+            </li>
           </ul>
-        </nav>
-        <select id="language" class="menu__language">
-          english
-          <option value="0">english</option>
-          <option value="1">russian</option>
-        </select>
-      </div>
-    </div>
-    <div class="clock">
-      <span class="clock__realise">Realease:</span>
-      <span class="clock__day">20</span>
-      <span class="clock__hours">20</span>
-      <span class="clock__minutes">59</span>
-    </div>
-    <br /><br /><br />
-    <button type="button" class="btn btn-violet">Bye now</button>
-    <button type="button" class="btn btn-red">Bye now</button>
-    <br /><br /><br />
-
-    <div class="card">
-      <div class="card__item">
-        <img src="./img/card/img.png" alt="img" class="card__img" />
-        <div class="card__title-text">
-          <span class="card__title">Standart Edition</span>
-          <span class="card__subtitle">PS5</span>
         </div>
-        <div class="card__description-text">
-          <span class="card__description-one">Offline play enabled</span>
-          <span class="card__description-two">Remote Play supported</span>
-          <span class="card__description-three">Trigger effect required</span>
-        </div>
-        <div class="card__pay">
-          <span class="card__price">19.99$</span>
-          <button type="button" class="btn btn-violet card__btn">
-            BUY NOW
-          </button>
-        </div>
-      </div>
-    </div>
-    <br /><br /><br />
-
-    <div class="requirements">
-      <span class="requirements__title"
-        >Here are the God of War (PC) System Requirements
-      </span>
-      <div class="requirements_preference-text">
-        <span
-          id="requirements__minimum"
-          class="requirements_preference requirements-isActive"
-          >Minimum</span
-        >
-        <div id="switch-btn0" class="requirements__switch-btn"></div>
-        <span id="requirements__recommended" class="requirements_preference"
-          >Recommended</span
-        >
-      </div>
-      <div class="requirements__price"></div>
-      <div class="requirements__specification">
-        <div class="requirements__specification-left">
-          <div class="requirements__specification-background">
-            <img
-              src="./img/requirements/image1.png"
-              alt="image1"
-              class="requirements__specification-img"
-            />
-          </div>
-        </div>
-        <div class="requirements__specification-right">
-          <h4 class="requirements__specification">
-            CPU<span
-              >: Intel i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1
-              GHz)</span
-            >
-          </h4>
-          <h4 class="requirements__specification">RAM<span>: 8 GB</span></h4>
-          <h4 class="requirements__specification">
-            OS<span>: Windows 10 64-bit </span>
-          </h4>
-          <h4 class="requirements__specification">
-            VIDEOCARD<span>: NVIDIA GTX 960 (4 GB) or AMD R9 290X (4 GB) </span>
-          </h4>
-          <h4 class="requirements__specification">
-            PIXEL SHADER<span>: 5.1</span>
-          </h4>
-          <h4 class="requirements__specification">
-            VERTEX SHADER<span>: 5.1</span>
-          </h4>
-          <h4 class="requirements__specification">
-            FREE DISK SPACE<span>: 70 GB</span>
-          </h4>
-          <h4 class="requirements__specification">
-            DEDICATED VIDEO RAM<span>: 4 GB</span>
-          </h4>
-          <button type="button" class="btn btn-red btn-requirements">
-            buy NOW
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="requirements">
-      <span class="requirements__title">God of War for PS4 </span>
-      <div class="requirements_preference-text">
-        <span
-          id="requirements__standart"
-          class="requirements_preference requirements-isActive"
-          >Standart</span
-        >
-        <div id="switch-btn1" class="requirements__switch-btn"></div>
-        <span id="requirements__limited" class="requirements_preference"
-          >Limited
-        </span>
-      </div>
-      <div class="requirements__price">15.99$</div>
-      <div class="requirements__specification">
-        <div class="requirements__specification-right">
-          <h4 class="requirements__specification">
-            Platform<span>: PS4</span>
-          </h4>
-          <h4 class="requirements__specification">
-            Premiere<span>: 20.4.2018</span>
-          </h4>
-          <h4 class="requirements__specification">
-            Publisher<span>: Sony Interactive Entertainment Europe</span>
-          </h4>
-          <h4 class="requirements__specification">
-            Species<span>: Action, Adventure</span>
-          </h4>
-          <h4 class="requirements__specification">
-            Voice<span>: English, Polish, Russian </span>
-          </h4>
-          <h4 class="requirements__specification">
-            Display languages<span
-              >: English, Dutch, Polish, Russian, Turkish</span
-            >
-          </h4>
-
-          <button type="button" class="btn btn-red btn-requirements">
-            buy NOW
-          </button>
-        </div>
-        <div class="requirements__specification-left">
-          <div class="requirements__specification-background">
-            <img
-              src="./img/requirements/image2.png"
-              alt="image2"
-              class="requirements__specification-img"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="cardnews">
-      <div class="cardnews__container">
-        <div class="cardnews__head">
-          <span class="cardnews__name">God of War Ragnarok</span>
-          <span class="cardnews__date">19/10/2022</span>
-        </div>
-        <h3 class="cardnews__title">will receive a large update on release</h3>
-        <div class="cardnews__body">
-          <div class="cardnews__imeg-container">
-            <img src="./img/cardNews/img1.png" alt="img" />
-          </div>
-          <div class="cardnews__content">
-            <span class="cardnews__content-text"
-              >God of War: Ragnarok is fast approaching. No wonder that we have
-              been regularly receiving new information and materials related to
-              the title in recent times. Last week, a trailer presenting the
-              possibilities of the game on PlayStation 5 hit the network , and a
-              little earlier we learned that the work on the production was
-              completed . Meanwhile, it turns out that the upcoming sequel to
-              the adventures of Kratos and Atreus will receive a major update on
-              release.</span
-            >
-            <button class="btn cardnews__content-btn">read</button>
-          </div>
+        <div class="clock">
+          <span class="clock__realise">Realease:</span>
+          <span class="clock__day">20</span>
+          <span class="clock__hours">20</span>
+          <span class="clock__minutes">59</span>
         </div>
       </div>
     </div>
   </body>
 </html>
+
+<!-- <div classÍ="menu__block-container">
+            <nav class="menu__container">
+              <ul class="menu_list">
+                <li class="menu_item">
+                  <a href="#" class="menu_link">editions</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">controller</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">about game</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link menu__link-active">explore</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">news</a>
+                </li>
+                <li class="menu_item"><a href="#" class="menu_link">faq</a></li>
+              </ul>
+            </nav>
+            <select id="language" class="menu__language">
+              english
+              <option value="0">english</option>
+              <option value="1">russian</option>
+            </select>
+          </div> -->
