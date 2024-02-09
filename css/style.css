@@ -1,6 +1,7 @@
 @import "/css/nullstyle.css";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import "/css/menu.css";
+@import "/css/header.css";
 
 /*Variable*/
 :root {
@@ -16,65 +17,22 @@
   --transition-time: 0.3s;
 }
 body {
-  padding: 50px;
   font-size: 14px;
   font-weight: normal;
   background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
 }
 /*Menu*/
 
 /*end menu*/
 
-/*Clock*/
-.clock {
-  display: flex;
-  align-items: center;
-  font-family: var(--font-family);
-  font-size: 16px;
-  color: var(--text-card-color);
-}
-.clock__realise {
-  margin-right: 20px;
-}
-
-.clock__day,
-.clock__hours,
-.clock__minutes {
+.container {
   position: relative;
-  font-weight: 700;
-  font-size: 40px;
-  color: var(--description-color);
+  max-width: 1735px;
+  width: 100%;
+  padding: 30px 15px;
 }
-
-.clock__day {
-  margin-right: 5px;
-}
-.clock__hours {
-  margin-right: 5px;
-}
-
-.clock__day::after,
-.clock__hours:after,
-.clock__minutes:after {
-  position: absolute;
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--text-card-color);
-  left: 20px;
-  bottom: -25px;
-}
-
-.clock__day::after {
-  content: "D";
-}
-.clock__hours:after {
-  content: "H";
-}
-
-.clock__minutes:after {
-  content: "M";
-}
-/*end clock*/
 
 /*button*/
 .btn {

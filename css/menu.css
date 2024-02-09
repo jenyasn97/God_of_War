@@ -1,6 +1,8 @@
 .menu {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  z-index: 200;
 }
 .menu__btn-container {
   position: relative;
@@ -34,7 +36,7 @@
 }
 .menu__button::after {
   width: 100%;
-  top: 75%;
+  top: 80%;
 }
 
 .is-active span {
@@ -45,7 +47,6 @@
   width: 50%;
 }
 
-/*  */
 .menu__container {
   display: flex;
   align-items: center;
@@ -55,9 +56,6 @@
   margin-left: 50px;
   transition: transform var(--transition-time) ease-in;
 }
-.menu__item {
-}
-
 .menu__link {
   font-family: var(--font-family);
   text-transform: uppercase;
@@ -79,5 +77,80 @@
 }
 
 .menu__hiden > .menu__container > .menu__list {
-  transform: translateX(-150%) scale(0);
+  transform: translateX(-200%);
+}
+
+/*Clock*/
+.clock {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: var(--text-card-color);
+}
+.clock__realise {
+  margin-right: 20px;
+}
+
+.clock__day,
+.clock__hours,
+.clock__minutes {
+  position: relative;
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--description-color);
+}
+
+.clock__day {
+  margin-right: 5px;
+}
+.clock__hours {
+  margin-right: 5px;
+}
+
+.clock__day::after,
+.clock__hours:after,
+.clock__minutes:after {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-card-color);
+  left: 20px;
+  bottom: -25px;
+}
+
+.clock__day::after {
+  content: "D";
+}
+.clock__hours:after {
+  content: "H";
+}
+
+.clock__minutes:after {
+  content: "M";
+}
+/*end clock*/
+
+@media (max-width: 1070px) {
+  .menu__btn-container {
+    margin-bottom: 10px;
+  }
+
+  .menu__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu__list {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+  }
+  .menu__link {
+    display: block;
+    padding: 5px 0;
+    margin: 0;
+  }
+  .clock {
+    align-items: baseline;
+  }
 }
