@@ -50,6 +50,7 @@
 .menu__container {
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 .menu__list {
   display: flex;
@@ -117,6 +118,7 @@
   color: var(--text-card-color);
   left: 20px;
   bottom: -25px;
+  z-index: 5;
 }
 
 .clock__day::after {

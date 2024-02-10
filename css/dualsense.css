@@ -1,0 +1,56 @@
+.dualsense {
+  font-family: var(--font-family);
+  margin-top: 55px;
+}
+.dualsense__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dualsense__title {
+  font-weight: 600;
+  font-size: 40px;
+  color: #fff;
+}
+.dualsense__description {
+  display: flex;
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--description-color);
+}
+.dualsense__description-text {
+  max-width: 425px;
+  margin-right: 150px;
+  padding-top: 25px;
+}
+.dualsense__text {
+  display: block;
+  padding-top: 21px;
+}
+.dualsense__text-violet {
+  font-weight: 700;
+  color: var(--button-color-first);
+}
+.dualsense__text-red {
+  font-weight: 700;
+  color: #ff4136;
+}
+.dualsense__price {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+.dualsense__price-text {
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+  margin-right: 33px;
+}
+.dualsense__btn {
+  padding: 14px 19px;
+}
+
+.dualsense__img img {
+}
