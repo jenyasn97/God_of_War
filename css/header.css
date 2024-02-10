@@ -12,8 +12,8 @@
   background:
     linear-gradient(89deg, #1c2023 0%, rgba(28, 32, 35, 0) 41.61%),
     linear-gradient(0deg, #1c2023 0%, rgba(28, 32, 35, 0) 41.61%),
-    url("/img/header/snow.gif") no-repeat center,
-    url("/img/header/header_img.jpg") no-repeat center right;
+    url("./img/header/snow.gif") no-repeat center,
+    url("./img/header/header_img.jpg") no-repeat center right;
   background-size: cover;
 }
 
