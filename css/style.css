@@ -1,10 +1,10 @@
-@import "./nullstyle.css";
+@import url("./nullstyle.css");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-@import "./const.css";
-@import "./menu.css";
-@import "./header.css";
-@import "./editions.css";
-@import "./dualsense.css";
+@import url("./const.css");
+@import url("./menu.css");
+@import url("./header.css");
+@import url("./editions.css");
+@import url("./dualsense.css");
 
 /*Variable*/
 
