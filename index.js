@@ -1,5 +1,4 @@
 "use strict";
-// import function to register Swiper custom elements
 
 const menuButton = document.querySelector(".menu__btn-container");
 const burger = document.querySelector(".menu__button");
@@ -9,11 +8,22 @@ const requirementsStandart = document.getElementById(`requirements__standart`);
 const requirementsLimited = document.getElementById(`requirements__limited`);
 const requirementsRecommended = document.getElementById(`requirements__recommended`);
 const requirementsMinimum = document.getElementById(`requirements__minimum`);
+const menuLinks = document.querySelectorAll(".menu__link ");
 
 //кнопка меню
 menuButton.addEventListener("click", function () {
   burger.classList.toggle("is-active");
   blockMenu.classList.toggle("menu__hiden");
+});
+
+//подсветка активной ссылки
+menuLinks.forEach((menuLink) => {
+  menuLink.addEventListener("click", function () {
+    menuLinks.forEach((link) => {
+      link.classList.remove("menu__link-active");
+    });
+    menuLink.classList.add("menu__link-active");
+  });
 });
 
 //переключатели чекбоксов
@@ -31,6 +41,20 @@ switchBtns.forEach((switchBtn) => {
   });
 });
 
+/* Плавный скрол */
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+  smoothLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    const id = smoothLink.getAttribute("href");
+
+    document.querySelector(id).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+}
+
 /* свайпер слайдер  */
 const swiper = new Swiper(".swiper", {
   slidesPerView: 3,
@@ -45,3 +69,54 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+/* Таймер обратного отсчета */
+function timer(id, deadline) {
+  function getTimeRemaining(endtime) {
+    const t = Date.parse(endtime) - Date.parse(new Date());
+
+    const days = Math.floor(t / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((t / 1000 / 60) % 60);
+
+    return {
+      total: t,
+      days: days,
+      hours: hours,
+      minutes: minutes,
+    };
+  }
+
+  function getZero(num) {
+    if (num >= 0 && num < 10) {
+      return `0${num}`;
+    } else {
+      return num;
+    }
+  }
+
+  function setClock(selector, endtime) {
+    const timer = document.querySelector(selector);
+    const days = timer.querySelector("#days");
+    const hours = timer.querySelector("#hours");
+    const minutes = timer.querySelector("#minutes");
+    const timeInterval = setInterval(updateClock, 1000);
+
+    updateClock();
+
+    function updateClock() {
+      const t = getTimeRemaining(endtime);
+
+      days.innerHTML = getZero(t.days);
+      hours.innerHTML = getZero(t.hours);
+      minutes.innerHTML = getZero(t.minutes);
+
+      if (t.total <= 0) {
+        clearInterval(timeInterval);
+      }
+    }
+  }
+  setClock(id, deadline);
+}
+
+timer(".clock", "2024-03-01");
