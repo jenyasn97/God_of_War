@@ -1,0 +1,24 @@
+.news {
+  width: 1920px;
+  padding: 0 20px;
+}
+
+.news__title {
+  margin-bottom: 30px;
+}
+
+.news__swiper-button-prev::after,
+.news__swiper-button-next::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url(../img/news/arrow.png) center center no-repeat;
+}
+.news__swiper-button-prev:hover,
+.news__swiper-button-next:hover {
+  background-color: var(--button-color-first-hover);
+}
+
+.news__swiper-button-next::after {
+  transform: rotate(180deg);
+}

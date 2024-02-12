@@ -9,6 +9,7 @@
   --font-family: "Rubik";
   --color-link-menu: rgba(255, 255, 255, 0.5);
   --transition-time: 0.3s;
+  --color-title: #fff;
 }
 body {
   font-size: 14px;
@@ -16,11 +17,10 @@ body {
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   overflow-x: hidden;
 }
-/*Menu*/
-
-/*end menu*/
 
 .container {
   position: relative;
@@ -50,4 +50,21 @@ body {
 }
 .btn-red:hover {
   background-color: var(--button-color-second-hover);
+}
+
+.title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  color: var(--color-title);
+}
+
+.swiper__btn {
+  width: 32px;
+  height: 32px;
+  top: 55%;
+  border-radius: 6px;
+  background-color: var(--text-card-color);
+  transition: background-color var(--transition-time) ease;
 }

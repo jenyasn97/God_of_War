@@ -5,6 +5,9 @@
 @import url("./header.css");
 @import url("./editions.css");
 @import url("./dualsense.css");
+@import url("./about.css");
+@import url("./requirements.css");
+@import url("./news.css");
 
 /*Variable*/
 
@@ -16,115 +19,10 @@
 
 /* requirements */
 
-.requirements__switch-btn {
-  display: inline-block;
-  width: 55px;
-  height: 26px;
-  border-radius: 19px;
-  background: #30373f;
-  z-index: 1;
-  margin: 0 15px;
-  padding: 0;
-  border: none;
-  cursor: pointer;
-  position: relative;
-  transition-duration: var(--transition-time);
-}
-.requirements__switch-btn::after {
-  content: "";
-  height: 18px;
-  width: 18px;
-  top: 4px;
-  left: 4px;
-  border-radius: 100%;
-  background: var(--button-color-first);
-  transition-duration: var(--transition-time);
-  position: absolute;
-  z-index: 1;
-}
-.switch-on {
-  background: #30373f;
-}
-.switch-on::after {
-  left: 33px;
-}
-.requirements {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 100px;
-  color: #fff;
-  font-weight: 400;
-  font-family: var(--font-family);
-  overflow: hidden;
-}
-.requirements__title {
-  font-weight: 500;
-  font-size: 18px;
-  margin-bottom: 21px;
-  text-align: center;
-}
-.requirements_preference-text {
-  display: flex;
-  align-items: center;
-  color: #30373f;
-  margin-bottom: 20px;
-}
-.requirements__price {
-  font-weight: 700;
-  font-size: 20px;
-  margin-bottom: 55px;
-}
-.requirements_preference {
-  font-size: 14px;
-}
-.requirements-isActive {
-  color: #fff;
-  transition: color var(--transition-time) ease-in-out;
-}
-.requirements__specification span {
-  color: #fff;
-}
-.requirements__specification {
-  display: flex;
-  position: relative;
-  color: var(--button-color-first);
-}
-
-.requirements__specification-left {
-  display: flex;
-  align-items: flex-end;
-  margin-right: 160px;
-  padding-left: 110px;
-}
-.requirements__specification-background {
-  width: 300px;
-  height: 300px;
-}
-
-.requirements__specification-img {
-  z-index: 0;
-  position: absolute;
-  bottom: 0;
-}
-.requirements__specification-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
-  font-size: 15px;
-  line-height: 240%;
-}
-.btn-requirements {
-  margin-top: 28px;
-  font-weight: 500;
-  font-size: 13px;
-}
-
 /* end requirements */
 
 /* cardnews */
+
 .cardnews {
 }
 .cardnews__container {
