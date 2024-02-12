@@ -22,3 +22,7 @@
 .news__swiper-button-next::after {
   transform: rotate(180deg);
 }
+
+.news__cardnews-content-btn:hover {
+  background: var(--button-color-first-hover);
+}
