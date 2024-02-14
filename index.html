@@ -32,7 +32,7 @@
               <a href="#explore" class="menu__link">explore</a>
             </li>
             <li class="menu__item"><a href="#news" class="menu__link">news</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">FAQ</a></li>
+            <li class="menu__item"><a href="#faq" class="menu__link">FAQ</a></li>
             <li class="menu__item">
               <select id="language" class="menu__language">
                 <option selected value="0">english</option>
@@ -49,7 +49,7 @@
         </div>
       </div>
 
-      <section class="header">
+      <headaer class="header">
         <div class="header__container">
           <div class="header__img-container"></div>
           <div class="header__content">
@@ -61,7 +61,7 @@
             <button class="btn btn-violet header__btn">buy NOW</button>
           </div>
         </div>
-      </section>
+      </headaer>
 
       <section id="editions" class="editions">
         <h2 class="title editions__title">Editions</h2>
@@ -214,7 +214,7 @@
       </section>
     </div>
 
-    <div id="news" class="news">
+    <section id="news" class="news">
       <div class="news__container">
         <div class="title news__title">News</div>
         <div class="swiper news__swiper">
@@ -362,8 +362,78 @@
           <div class="swiper__btn swiper-button-next news__swiper-button-next"></div>
         </div>
       </div>
-    </div>
+    </section>
+    <div class="container">
+      <section id="faq" class="faq">
+        <div class="faq__container">
+          <h2 class="title faq__titlt">FAQ</h2>
+          <div class="faq__accordion">
+            <div class="faq__accordion-block">
+              <div class="faq__accordion-header">
+                <h3 class="faq__accordion-title">When is the next God of War coming out?</h3>
+                <button class="faq__accordion-btn">
+                  <span class="faq__accordion-btn-text">+</span>
+                </button>
+              </div>
+              <div class="faq__accordion-body">
+                God of War Ragnarök will release on <span class="faq__accordion-span">November 9, 2022</span>. To get the latest updates on release
+                timing, make sure you follow Santa Monica Studio on Twitter, Instagram and Facebook!
+              </div>
+            </div>
+            <div class="faq__accordion-block">
+              <div class="faq__accordion-header">
+                <h3 class="faq__accordion-title">Will God of War Ragnarök have an upgrade path?</h3>
+                <button class="faq__accordion-btn">
+                  <span class="faq__accordion-btn-text">+</span>
+                </button>
+              </div>
+              <div class="faq__accordion-body">
+                God of War Ragnarök will release on <span class="faq__accordion-span">November 9, 2022</span>. To get the latest updates on release
+                timing, make sure you follow Santa Monica Studio on Twitter, Instagram and Facebook!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="menu footer-menu">
+            <ul class="menu__list footer__menu-list">
+              <li class="menu__item footer__menu-item">
+                <a href="#editions" class="menu__link footer__menu-link">editions</a>
+              </li>
+              <li class="menu__item footer__menu-item">
+                <a href="#controller" class="menu__link footer__menu-link">controller</a>
+              </li>
+              <li class="menu__item footer__menu-item">
+                <a href="#about" class="menu__link footer__menu-link">about game</a>
+              </li>
+              <li class="menu__item footer__menu-item">
+                <a href="#explore" class="menu__link footer__menu-link">explore</a>
+              </li>
+              <li class="menu__item footer__menu-item"><a href="#news" class="menu__link footer__menu-link">news</a></li>
+              <li class="menu__item footer__menu-item"><a href="#faq" class="menu__link footer__menu-link">FAQ</a></li>
+            </ul>
+            <div class="footer__language-block">
+              <span class="footer__language-title">language</span>
+              <select id="language" class="menu__language footer__menu-language">
+                <option selected value="0">english</option>
+                <option value="1">russian</option>
+              </select>
+            </div>
+          </div>
+          <div class="footer__description">
+            Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage Terms plus any specific additional
+            conditions applying to this product. If you do not wish to accept these terms, do not download this product. See Terms of Service for more
+            important information.
+          </div>
+          <img src="./img/footer/logo.png" alt="logo" class="footer__logo" />
+          <div class="footer__year">2022</div>
+          <div class="footer__developer">Developed by <span>Tomkovich</span>. All rights reserved</div>
+        </div>
+      </footer>
+    </div>
     <script src="index.js" defer></script>
   </body>
 </html>

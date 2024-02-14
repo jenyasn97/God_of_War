@@ -9,6 +9,8 @@ const requirementsLimited = document.getElementById(`requirements__limited`);
 const requirementsRecommended = document.getElementById(`requirements__recommended`);
 const requirementsMinimum = document.getElementById(`requirements__minimum`);
 const menuLinks = document.querySelectorAll(".menu__link ");
+const accordionBtns = document.querySelectorAll(".faq__accordion-btn");
+const accordionBodys = document.querySelectorAll(".faq__accordion-body");
 
 //кнопка меню
 menuButton.addEventListener("click", function () {
@@ -121,3 +123,15 @@ function timer(id, deadline) {
 }
 
 timer(".clock", "2024-03-01");
+
+accordionBtns.forEach((btn, index) => {
+  btn.addEventListener("click", function (e) {
+    if (!e.target.classList.contains("accordion-btn-active")) {
+      e.target.classList.add("accordion-btn-active");
+      accordionBodys[index].classList.add("faq__accordion-body-isactive");
+    } else {
+      e.target.classList.remove("accordion-btn-active");
+      accordionBodys[index].classList.remove("faq__accordion-body-isactive");
+    }
+  });
+});

@@ -1,0 +1,57 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-card-color);
+}
+.footer__container {
+  max-width: 905px;
+}
+.footer-menu {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.footer__menu-list {
+  margin-left: 0;
+}
+
+.footer__menu-item {
+}
+
+.footer__menu-link {
+}
+.footer__language-block {
+}
+.footer__language-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 193%;
+  text-transform: uppercase;
+}
+
+.footer__menu-language {
+}
+.footer__description {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.footer__logo {
+  align-items: center;
+  margin-bottom: 20px;
+}
+.footer__year {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.footer__developer {
+  font-size: 16px;
+}
+.footer__developer span {
+  color: var(--button-color-first);
+}
