@@ -1,5 +1,4 @@
 .dualsense {
-  font-family: var(--font-family);
   margin-top: 55px;
 }
 .dualsense__container {
@@ -12,7 +11,7 @@
   display: flex;
   margin-top: 40px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: var(--fs18px);
   line-height: 150%;
   color: var(--description-color);
 }
@@ -40,13 +39,10 @@
 }
 .dualsense__price-text {
   font-weight: 700;
-  font-size: 30px;
-  color: #fff;
+  font-size: var(--fs30px);
+  color: var(--color-title);
   margin-right: 33px;
 }
 .dualsense__btn {
   padding: 14px 19px;
-}
-
-.dualsense__img img {
 }

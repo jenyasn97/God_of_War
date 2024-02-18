@@ -1,5 +1,5 @@
 .header {
-  height: 550px;
+margin-bottom: 20px;
 }
 
 .header__img-container {
@@ -26,18 +26,33 @@
 }
 .header__title {
   font-weight: 600;
-  font-size: 100px;
+  font-size: var(--fs100px);
   line-height: 100%;
-  color: #fff;
+  color: var(--color-title);
 }
 .header__description {
   display: block;
   margin-top: 26px;
-  font-size: 18px;
+  font-size: var(--fs18px);
   line-height: 150%;
   color: var(--description-color);
 }
 
 .header__btn {
   margin-top: 50px;
+}
+
+@media (max-width: 1070px) {
+  .header__img-container {
+    right: 0;
+    background:
+      linear-gradient(89deg, #1c2023 0%, rgba(28, 32, 35, 0) 41.61%),
+      linear-gradient(0deg, #1c2023 0%, rgba(28, 32, 35, 0) 41.61%),
+      url(../img/header/snow.gif) no-repeat center top,
+      url(../img/header/header_img.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  .header__content {
+    margin-top: 45px;
+  }
 }

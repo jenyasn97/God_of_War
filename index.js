@@ -25,6 +25,8 @@ menuLinks.forEach((menuLink) => {
       link.classList.remove("menu__link-active");
     });
     menuLink.classList.add("menu__link-active");
+    blockMenu.classList.add("menu__hiden");
+    burger.classList.remove("is-active");
   });
 });
 

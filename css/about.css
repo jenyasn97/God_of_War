@@ -12,7 +12,7 @@
   width: 100%;
 }
 .about__video iframe {
-  height: 945px;
+  height: 100vh;
 }
 .about__video-container {
   display: flex;

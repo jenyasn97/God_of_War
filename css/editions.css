@@ -1,5 +1,7 @@
 .editions {
+  padding-top: 150px;
 }
+
 .editions__title {
   margin-bottom: 30px;
 }
@@ -15,7 +17,6 @@
   flex-direction: column;
   border-radius: 6px;
   padding: 17px;
-  font-family: var(--font-family);
   background: linear-gradient(180deg, #141615 0%, #1c2023 100%);
   transition: scale var(--transition-time) ease-in;
 }
@@ -32,7 +33,7 @@
   font-size: 16px;
 }
 .editions__card-title {
-  color: #fff;
+  color: var(--color-title);
 }
 .editions__subtitle {
   margin-top: 15px;
@@ -43,8 +44,6 @@
   display: flex;
   flex-direction: column;
   margin-top: 32px;
-  font-weight: 400;
-  font-size: 14px;
   color: var(--text-card-color);
 }
 .editions__description-one,
@@ -59,12 +58,12 @@
   flex-direction: column;
   align-items: flex-end;
   font-weight: 700;
-  font-size: 19px;
-  color: #fff;
+  font-size: var(--fs18px);
+  color: var(--color-title);
 }
 .editions__price {
   margin-bottom: 14px;
 }
 .editions__btn {
-  font-size: 13px;
+  font-size: var(--fs14px);
 }

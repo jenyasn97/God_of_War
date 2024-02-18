@@ -10,9 +10,23 @@
   --color-link-menu: rgba(255, 255, 255, 0.5);
   --transition-time: 0.3s;
   --color-title: #fff;
+  --fs10px: 0.625rem;
+  --fs12px: 0.75rem;
+  --fs14px: 0.875rem;
+  --fs16px: 1rem;
+  --fs18px: 1.125rem;
+  --fs20px: 1.25rem;
+  --fs24px: 1.5rem;
+  --fs30px: 1.875rem;
+  --fs40px: 2.5rem;
+  --fs100px: 6.25rem;
+}
+
+html{
+    overflow-x: hidden;
 }
 body {
-  font-size: 14px;
+  font-size: var(--fs14px);
   font-weight: normal;
   background-color: var(--background-color);
   display: flex;
@@ -20,7 +34,6 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -45,10 +58,10 @@ body::-webkit-scrollbar-thumb {
 .btn {
   border-radius: 6px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--fs16px);
   padding: 12px 37px;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--color-title);
   transition: background-color var(--transition-time) ease-in-out;
 }
 .btn-violet {
@@ -67,7 +80,7 @@ body::-webkit-scrollbar-thumb {
 .title {
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: 40px;
+  font-size: var(--fs40px);
   text-align: center;
   color: var(--color-title);
 }
