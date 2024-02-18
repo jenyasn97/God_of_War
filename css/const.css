@@ -19,11 +19,13 @@
   --fs24px: 1.5rem;
   --fs30px: 1.875rem;
   --fs40px: 2.5rem;
+  --fs60px: 3.75rem;
+  --fs80px: 5rem;
   --fs100px: 6.25rem;
 }
 
-html{
-    overflow-x: hidden;
+html {
+  overflow-x: hidden;
 }
 body {
   font-size: var(--fs14px);
@@ -48,10 +50,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .container {
+  display: block;
   position: relative;
   max-width: 1735px;
   width: 100%;
-  padding: 30px 15px;
+  padding: 0 20px;
+  border: 1px solid white;
 }
 
 /*button*/

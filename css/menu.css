@@ -1,8 +1,13 @@
 .menu {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
   z-index: 200;
+  width: 100%;
   height: 50px;
 }
 .menu__btn-container {
@@ -135,7 +140,7 @@
 /*end clock*/
 
 @media (max-width: 1070px) {
-  .menu{
+  .menu {
     align-items: center;
   }
   .menu__button {
