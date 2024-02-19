@@ -100,7 +100,7 @@ const news = [
     theme: "God of War Ragnarok",
     date: "19/10/2022",
     title: "will receive a large update on release",
-    img: "/img/cardNews/img1.png",
+    img: "./img/cardNews/img1.png",
     description: `God of War: Ragnarok is fast approaching. No wonder that we have been regularly receiving new information and materials
     related to the title in recent times. Last week, a trailer presenting the possibilities of the game on PlayStation 5 hit the
     network , and a little earlier we learned that the work on the production was completed . Meanwhile, it turns out that the
@@ -111,7 +111,7 @@ const news = [
     theme: "God of War Ragnarok",
     date: "19/10/2022",
     title: "will receive a large update on release",
-    img: "/img/cardNews/img1.png",
+    img: "./img/cardNews/img1.png",
     description: `God of War: Ragnarok is fast approaching. No wonder that we have been regularly receiving new information and materials
     related to the title in recent times. Last week, a trailer presenting the possibilities of the game on PlayStation 5 hit the
     network , and a little earlier we learned that the work on the production was completed . Meanwhile, it turns out that the
@@ -122,7 +122,7 @@ const news = [
     theme: "God of War Ragnarok",
     date: "19/10/2022",
     title: "will receive a large update on release",
-    img: "/img/cardNews/img1.png",
+    img: "./img/cardNews/img1.png",
     description: `God of War: Ragnarok is fast approaching. No wonder that we have been regularly receiving new information and materials
     related to the title in recent times. Last week, a trailer presenting the possibilities of the game on PlayStation 5 hit the
     network , and a little earlier we learned that the work on the production was completed . Meanwhile, it turns out that the
@@ -133,7 +133,7 @@ const news = [
     theme: "God of War Ragnarok",
     date: "19/10/2022",
     title: "will receive a large update on release",
-    img: "/img/cardNews/img1.png",
+    img: "./img/cardNews/img1.png",
     description: `God of War: Ragnarok is fast approaching. No wonder that we have been regularly receiving new information and materials
     related to the title in recent times. Last week, a trailer presenting the possibilities of the game on PlayStation 5 hit the
     network , and a little earlier we learned that the work on the production was completed . Meanwhile, it turns out that the
@@ -144,7 +144,7 @@ const news = [
     theme: "God of War Ragnarok",
     date: "19/10/2022",
     title: "will receive a large update on release",
-    img: "/img/cardNews/img1.png",
+    img: "./img/cardNews/img1.png",
     description: `God of War: Ragnarok is fast approaching. No wonder that we have been regularly receiving new information and materials
     related to the title in recent times. Last week, a trailer presenting the possibilities of the game on PlayStation 5 hit the
     network , and a little earlier we learned that the work on the production was completed . Meanwhile, it turns out that the
@@ -155,7 +155,7 @@ const news = [
     theme: "God of War Ragnarok",
     date: "19/10/2022",
     title: "will receive a large update on release",
-    img: "/img/cardNews/img1.png",
+    img: "./img/cardNews/img1.png",
     description: `God of War: Ragnarok is fast approaching. No wonder that we have been regularly receiving new information and materials
     related to the title in recent times. Last week, a trailer presenting the possibilities of the game on PlayStation 5 hit the
     network , and a little earlier we learned that the work on the production was completed . Meanwhile, it turns out that the
@@ -166,7 +166,7 @@ const news = [
     theme: "God of War Ragnarok",
     date: "19/10/2022",
     title: "will receive a large update on release",
-    img: "/img/cardNews/img1.png",
+    img: "./img/cardNews/img1.png",
     description: `God of War: Ragnarok is fast approaching. No wonder that we have been regularly receiving new information and materials
     related to the title in recent times. Last week, a trailer presenting the possibilities of the game on PlayStation 5 hit the
     network , and a little earlier we learned that the work on the production was completed . Meanwhile, it turns out that the
