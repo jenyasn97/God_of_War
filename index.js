@@ -174,6 +174,9 @@ const news = [
   },
 ];
 
+let checkPC = false;
+let checkPS = false;
+
 editions.forEach((edition) => {
   document.querySelector(".editions__container").innerHTML += `<div class="editions__item">
   <img src="${edition.img}" alt="${edition.title}" class="editions__img" />
@@ -242,19 +245,17 @@ menuLinks.forEach((menuLink) => {
 switchBtns.forEach((switchBtn) => {
   switchBtn.addEventListener("click", function (event) {
     if (document.getElementById("switch-btn1") === event.target) {
-      let check = false;
       switchBtn.classList.toggle("switch-on");
       requirementsStandart.classList.toggle("requirements-isActive");
       requirementsLimited.classList.toggle("requirements-isActive");
-      check = !check;
-      setSetiingsPS(check);
+      checkPS = !checkPS;
+      setSetiingsPS(checkPS);
     } else if (document.getElementById("switch-btn0") === event.target) {
-      let check = false;
       switchBtn.classList.toggle("switch-on");
       requirementsMinimum.classList.toggle("requirements-isActive");
       requirementsRecommended.classList.toggle("requirements-isActive");
-      check = !check;
-      setSetiingsPC(check);
+      checkPC = !checkPC;
+      setSetiingsPC(checkPC);
     }
   });
 });
