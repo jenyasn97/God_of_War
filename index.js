@@ -45,24 +45,54 @@ const editions = [
   },
 ];
 
-editions.forEach((edition) => {
-  document.querySelector(".editions__container").innerHTML += `<div class="editions__item">
-  <img src="${edition.img}" alt="${edition.title}" class="editions__img" />
-  <div class="editions__title-text">
-    <span class="editions__card-title">${edition.title}</span>
-    <span class="editions__subtitle">${edition.platform}</span>
-  </div>
-  <div class="editions__description-text">
-    <span class="editions__description-one">${edition.description1}</span>
-    <span class="editions__description-two">${edition.description2}</span>
-    <span class="editions__description-three">${edition.description3}</span>
-  </div>
-  <div class="editions__pay">
-    <span class="editions__price">${edition.price}</span>
-    <button type="button" class="btn btn-violet editions__btn">BUY NOW</button>
-  </div>
-</div>`;
-});
+const systemPC = [
+  {
+    img: "./img/requirements/image1.png",
+    minimum: {
+      cpu: "Intel i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)",
+      ram: "8 GB",
+      os: "Windows 10 64-bit",
+      videocard: "NVIDIA GTX 960 (4 GB) or AMD R9 290X (4 GB)",
+      "pixel shader": "5.1",
+      "vertex shader": "5.1",
+      "free disk space": "70 GB",
+      "dedicated video ram": "4 GB",
+    },
+    recomended: {
+      cpu: "Intel i5-12600k (10 core 3.7 GHz) or AMD Ryzen  7800 (8 core 4.2 GHz)",
+      ram: "16 GB",
+      os: "Windows 10 64-bit",
+      videocard: "NVIDIA RTX 2070  (8 GB) or AMD RX 7000 (8 GB)",
+      "pixel shader": "5.1",
+      "vertex shader": "5.1",
+      "free disk space": "120 GB",
+      "dedicated video ram": "8 GB",
+    },
+  },
+];
+const systemPS = [
+  {
+    img: "./img/requirements/image2.png",
+    standart: {
+      price: "15.99$",
+      platform: "PS4",
+      premiere: "20.4.2018",
+      publisher: "Sony Interactive Entertainment Europe",
+      species: "Action, Adventure",
+      voice: "English, Polish, Russian",
+      "display languages": "English, Dutch, Polish, Russian, Turkish",
+    },
+    limited: {
+      price: "25.99$",
+      platform: "PS5",
+      premiere: "20.6.2012",
+      publisher: "Sony Interactive Entertainment Europe",
+      species: "Action, Adventure",
+      voice: "English, Polish, Russian, Turkish",
+      "display languages": "English, Dutch, Polish, Russian, Turkish",
+    },
+  },
+];
 
 const news = [
   {
@@ -144,6 +174,26 @@ const news = [
   },
 ];
 
+
+editions.forEach((edition) => {
+  document.querySelector(".editions__container").innerHTML += `<div class="editions__item">
+  <img src="${edition.img}" alt="${edition.title}" class="editions__img" />
+  <div class="editions__title-text">
+    <span class="editions__card-title">${edition.title}</span>
+    <span class="editions__subtitle">${edition.platform}</span>
+  </div>
+  <div class="editions__description-text">
+    <span class="editions__description-one">${edition.description1}</span>
+    <span class="editions__description-two">${edition.description2}</span>
+    <span class="editions__description-three">${edition.description3}</span>
+  </div>
+  <div class="editions__pay">
+    <span class="editions__price">${edition.price}</span>
+    <button type="button" class="btn btn-violet editions__btn">BUY NOW</button>
+  </div>
+</div>`;
+});
+
 news.forEach((newItem) => {
   document.querySelector(".swiper-wrapper").innerHTML += `
               <div class="swiper-slide news__swiper-slide news__cardnews">
@@ -170,55 +220,6 @@ news.forEach((newItem) => {
 
   `;
 });
-
-const systemPC = [
-  {
-    img: "./img/requirements/image1.png",
-    minimum: {
-      cpu: "Intel i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)",
-      ram: "8 GB",
-      os: "Windows 10 64-bit",
-      videocard: "NVIDIA GTX 960 (4 GB) or AMD R9 290X (4 GB)",
-      "pixel shader": "5.1",
-      "vertex shader": "5.1",
-      "free disk space": "70 GB",
-      "dedicated video ram": "4 GB",
-    },
-    recomended: {
-      cpu: "Intel i5-12600k (10 core 3.7 GHz) or AMD Ryzen  7800 (8 core 4.2 GHz)",
-      ram: "16 GB",
-      os: "Windows 10 64-bit",
-      videocard: "NVIDIA RTX 2070  (8 GB) or AMD RX 7000 (8 GB)",
-      "pixel shader": "5.1",
-      "vertex shader": "5.1",
-      "free disk space": "120 GB",
-      "dedicated video ram": "8 GB",
-    },
-  },
-];
-const systemPS = [
-  {
-    img: "./img/requirements/image2.png",
-    standart: {
-      price: "15.99$",
-      platform: "PS4",
-      premiere: "20.4.2018",
-      publisher: "Sony Interactive Entertainment Europe",
-      species: "Action, Adventure",
-      voice: "English, Polish, Russian",
-      "display languages": "English, Dutch, Polish, Russian, Turkish",
-    },
-    limited: {
-      price: "25.99$",
-      platform: "PS5",
-      premiere: "20.6.2012",
-      publisher: "Sony Interactive Entertainment Europe",
-      species: "Action, Adventure",
-      voice: "English, Polish, Russian, Turkish",
-      "display languages": "English, Dutch, Polish, Russian, Turkish",
-    },
-  },
-];
 
 //кнопка меню
 menuButton.addEventListener("click", function () {
