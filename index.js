@@ -85,7 +85,7 @@ const systemPS = [
     limited: {
       price: "25.99$",
       platform: "PS5",
-      premiere: "20.6.2012",
+      premiere: "20.6.2022",
       publisher: "Sony Interactive Entertainment Europe",
       species: "Action, Adventure",
       voice: "English, Polish, Russian, Turkish",
