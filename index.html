@@ -8,7 +8,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
-
+    <script src="index.js" defer></script>
     <title>Gof of War</title>
   </head>
   <body>
@@ -62,56 +62,7 @@
 
       <section id="editions" class="editions">
         <h2 class="title editions__title">Editions</h2>
-        <div class="editions__container">
-          <div class="editions__item">
-            <img src="./img/card/img.png" alt="img" class="editions__img" />
-            <div class="editions__title-text">
-              <span class="editions__card-title">Standart Edition</span>
-              <span class="editions__subtitle">PS5</span>
-            </div>
-            <div class="editions__description-text">
-              <span class="editions__description-one">Offline play enabled</span>
-              <span class="editions__description-two">Remote Play supported</span>
-              <span class="editions__description-three">Trigger effect required</span>
-            </div>
-            <div class="editions__pay">
-              <span class="editions__price">19.99$</span>
-              <button type="button" class="btn btn-violet editions__btn">BUY NOW</button>
-            </div>
-          </div>
-          <div class="editions__item">
-            <img src="./img/card/img.png" alt="img" class="editions__img" />
-            <div class="editions__title-text">
-              <span class="editions__card-title">Standart Edition</span>
-              <span class="editions__subtitle">PS4</span>
-            </div>
-            <div class="editions__description-text">
-              <span class="editions__description-one">Offline play enabled</span>
-              <span class="editions__description-two">Remote Play supported</span>
-              <span class="editions__description-three">Trigger effect required</span>
-            </div>
-            <div class="editions__pay">
-              <span class="editions__price">18.99$</span>
-              <button type="button" class="btn btn-violet editions__btn">BUY NOW</button>
-            </div>
-          </div>
-          <div class="editions__item">
-            <img src="./img/card/img2.png" alt="img" class="editions__img" />
-            <div class="editions__title-text">
-              <span class="editions__card-title">Digital Deluxe Edition</span>
-              <span class="editions__subtitle">PS5</span>
-            </div>
-            <div class="editions__description-text">
-              <span class="editions__description-one">Offline play enabled</span>
-              <span class="editions__description-two">Remote Play supported</span>
-              <span class="editions__description-three">Trigger effect required</span>
-            </div>
-            <div class="editions__pay">
-              <span class="editions__price">29.99$</span>
-              <button type="button" class="btn btn-violet editions__btn">BUY NOW</button>
-            </div>
-          </div>
-        </div>
+        <div class="editions__container"></div>
       </section>
       <section id="controller" class="dualsense">
         <div class="dualsense__container">
@@ -160,24 +111,7 @@
             <span id="requirements__recommended" class="requirements_preference">Recommended</span>
           </div>
           <div class="requirements__price"></div>
-          <div class="requirements__specification">
-            <div class="requirements__specification-left">
-              <div class="requirements__specification-background">
-                <img src="./img/requirements/image1.png" alt="image1" class="requirements__specification-img" />
-              </div>
-            </div>
-            <div class="requirements__specification-right">
-              <h4 class="requirements__specification">CPU<span>: Intel i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)</span></h4>
-              <h4 class="requirements__specification">RAM<span>: 8 GB</span></h4>
-              <h4 class="requirements__specification">OS<span>: Windows 10 64-bit </span></h4>
-              <h4 class="requirements__specification">VIDEOCARD<span>: NVIDIA GTX 960 (4 GB) or AMD R9 290X (4 GB) </span></h4>
-              <h4 class="requirements__specification">PIXEL SHADER<span>: 5.1</span></h4>
-              <h4 class="requirements__specification">VERTEX SHADER<span>: 5.1</span></h4>
-              <h4 class="requirements__specification">FREE DISK SPACE<span>: 70 GB</span></h4>
-              <h4 class="requirements__specification">DEDICATED VIDEO RAM<span>: 4 GB</span></h4>
-              <button type="button" class="btn btn-red btn-requirements">buy NOW</button>
-            </div>
-          </div>
+          <div class="requirements_system-pc"></div>
         </div>
 
         <div class="requirements__block">
@@ -187,170 +121,14 @@
             <div id="switch-btn1" class="requirements__switch-btn"></div>
             <span id="requirements__limited" class="requirements_preference">Limited </span>
           </div>
-          <div class="requirements__price">15.99$</div>
-          <div class="requirements__specification">
-            <div class="requirements__specification-right">
-              <h4 class="requirements__specification">Platform<span>: PS4</span></h4>
-              <h4 class="requirements__specification">Premiere<span>: 20.4.2018</span></h4>
-              <h4 class="requirements__specification">Publisher<span>: Sony Interactive Entertainment Europe</span></h4>
-              <h4 class="requirements__specification">Species<span>: Action, Adventure</span></h4>
-              <h4 class="requirements__specification">Voice<span>: English, Polish, Russian </span></h4>
-              <h4 class="requirements__specification">Display languages<span>: English, Dutch, Polish, Russian, Turkish</span></h4>
-
-              <button type="button" class="btn btn-red btn-requirements">buy NOW</button>
-            </div>
-            <div class="requirements__specification-left">
-              <div class="requirements__specification-background">
-                <img src="./img/requirements/image2.png" alt="image2" class="requirements__specification-img" />
-              </div>
-            </div>
-          </div>
+          <div class="requirements_system-ps"></div>
         </div>
       </section>
       <section id="news" class="news">
         <div class="news__container">
           <div class="title news__title">News</div>
           <div class="swiper news__swiper">
-            <div class="swiper-wrapper news__swiper-wrapper">
-              <div class="swiper-slide news__swiper-slide news__cardnews">
-                <div class="cardnews__container news__cardnews-container">
-                  <div class="cardnews__head news__cardnews-head">
-                    <span class="cardnews__name news__cardnews-name">God of War Ragnarok</span>
-                    <span class="cardnews__date news__cardnews-date">19/10/2022</span>
-                  </div>
-                  <h3 class="cardnews__title news__cardnews-title">will receive a large update on release</h3>
-                  <div class="cardnews__body news__cardnews-body">
-                    <div class="cardnews__imeg-container news__cardnews-imeg-container">
-                      <img src="./img/cardNews/img1.png" alt="img" />
-                    </div>
-                    <div class="cardnews__content news__cardnews-content">
-                      <span class="cardnews__content-text news__cardnews-content-text"
-                        >God of War: Ragnarok is fast approaching. No wonder that we have been regularly receiving new information and materials
-                        related to the title in recent times. Last week, a trailer presenting the possibilities of the game on PlayStation 5 hit the
-                        network , and a little earlier we learned that the work on the production was completed . Meanwhile, it turns out that the
-                        upcoming sequel to the adventures of Kratos and Atreus will receive a major update on release.</span
-                      >
-                      <button class="btn cardnews__content-btn news__cardnews-content-btn">read</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide news__swiper-slide cardnews">
-                <div class="cardnews__container news__cardnews-container">
-                  <div class="cardnews__head news__cardnews-head">
-                    <span class="cardnews__name news__cardnews-name">God of War Ragnarok</span>
-                    <span class="cardnews__date news__cardnews-date">19/10/2022</span>
-                  </div>
-                  <h3 class="cardnews__title news__cardnews-title">will receive a large update on release</h3>
-                  <div class="cardnews__body news__cardnews-body">
-                    <div class="cardnews__imeg-container news__cardnews-imeg-container">
-                      <img src="./img/cardNews/img1.png" alt="img" />
-                    </div>
-                    <div class="cardnews__content news__cardnews-content">
-                      <span class="cardnews__content-text news__cardnews-content-text"
-                        >God of War: Ragnarok is fast approaching. No wonder that we have been regularly receiving new information and materials
-                        related to the title in recent times. Last week, a trailer presenting the possibilities of the game on PlayStation 5 hit the
-                        network , and a little earlier we learned that the work on the production was completed . Meanwhile, it turns out that the
-                        upcoming sequel to the adventures of Kratos and Atreus will receive a major update on release.</span
-                      >
-                      <button class="btn cardnews__content-btn news__cardnews-content-btn">read</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide news__swiper-slide cardnews">
-                <div class="cardnews__container news__cardnews-container">
-                  <div class="cardnews__head news__cardnews-head">
-                    <span class="cardnews__name news__cardnews-name">God of War Ragnarok</span>
-                    <span class="cardnews__date news__cardnews-date">19/10/2022</span>
-                  </div>
-                  <h3 class="cardnews__title news__cardnews-title">will receive a large update on release</h3>
-                  <div class="cardnews__body news__cardnews-body">
-                    <div class="cardnews__imeg-container news__cardnews-imeg-container">
-                      <img src="./img/cardNews/img1.png" alt="img" />
-                    </div>
-                    <div class="cardnews__content news__cardnews-content">
-                      <span class="cardnews__content-text news__cardnews-content-text"
-                        >God of War: Ragnarok is fast approaching. No wonder that we have been regularly receiving new information and materials
-                        related to the title in recent times. Last week, a trailer presenting the possibilities of the game on PlayStation 5 hit the
-                        network , and a little earlier we learned that the work on the production was completed . Meanwhile, it turns out that the
-                        upcoming sequel to the adventures of Kratos and Atreus will receive a major update on release.</span
-                      >
-                      <button class="btn cardnews__content-btn news__cardnews-content-btn">read</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide news__swiper-slide cardnews">
-                <div class="cardnews__container news__cardnews-container">
-                  <div class="cardnews__head news__cardnews-head">
-                    <span class="cardnews__name news__cardnews-name">God of War Ragnarok</span>
-                    <span class="cardnews__date news__cardnews-date">19/10/2022</span>
-                  </div>
-                  <h3 class="cardnews__title news__cardnews-title">will receive a large update on release</h3>
-                  <div class="cardnews__body news__cardnews-body">
-                    <div class="cardnews__imeg-container news__cardnews-imeg-container">
-                      <img src="./img/cardNews/img1.png" alt="img" />
-                    </div>
-                    <div class="cardnews__content news__cardnews-content">
-                      <span class="cardnews__content-text news__cardnews-content-text"
-                        >God of War: Ragnarok is fast approaching. No wonder that we have been regularly receiving new information and materials
-                        related to the title in recent times. Last week, a trailer presenting the possibilities of the game on PlayStation 5 hit the
-                        network , and a little earlier we learned that the work on the production was completed . Meanwhile, it turns out that the
-                        upcoming sequel to the adventures of Kratos and Atreus will receive a major update on release.</span
-                      >
-                      <button class="btn cardnews__content-btn news__cardnews-content-btn">read</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide news__swiper-slide cardnews">
-                <div class="cardnews__container news__cardnews-container">
-                  <div class="cardnews__head news__cardnews-head">
-                    <span class="cardnews__name news__cardnews-name">God of War Ragnarok</span>
-                    <span class="cardnews__date news__cardnews-date">19/10/2022</span>
-                  </div>
-                  <h3 class="cardnews__title news__cardnews-title">will receive a large update on release</h3>
-                  <div class="cardnews__body news__cardnews-body">
-                    <div class="cardnews__imeg-container news__cardnews-imeg-container">
-                      <img src="./img/cardNews/img1.png" alt="img" />
-                    </div>
-                    <div class="cardnews__content news__cardnews-content">
-                      <span class="cardnews__content-text news__cardnews-content-text"
-                        >God of War: Ragnarok is fast approaching. No wonder that we have been regularly receiving new information and materials
-                        related to the title in recent times. Last week, a trailer presenting the possibilities of the game on PlayStation 5 hit the
-                        network , and a little earlier we learned that the work on the production was completed . Meanwhile, it turns out that the
-                        upcoming sequel to the adventures of Kratos and Atreus will receive a major update on release.</span
-                      >
-                      <button class="btn cardnews__content-btn news__cardnews-content-btn">read</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide news__swiper-slide cardnews">
-                <div class="cardnews__container news__cardnews-container">
-                  <div class="cardnews__head news__cardnews-head">
-                    <span class="cardnews__name news__cardnews-name">God of War Ragnarok</span>
-                    <span class="cardnews__date news__cardnews-date">19/10/2022</span>
-                  </div>
-                  <h3 class="cardnews__title news__cardnews-title">will receive a large update on release</h3>
-                  <div class="cardnews__body news__cardnews-body">
-                    <div class="cardnews__imeg-container news__cardnews-imeg-container">
-                      <img src="./img/cardNews/img1.png" alt="img" />
-                    </div>
-                    <div class="cardnews__content news__cardnews-content">
-                      <span class="cardnews__content-text news__cardnews-content-text"
-                        >God of War: Ragnarok is fast approaching. No wonder that we have been regularly receiving new information and materials
-                        related to the title in recent times. Last week, a trailer presenting the possibilities of the game on PlayStation 5 hit the
-                        network , and a little earlier we learned that the work on the production was completed . Meanwhile, it turns out that the
-                        upcoming sequel to the adventures of Kratos and Atreus will receive a major update on release.</span
-                      >
-                      <button class="btn cardnews__content-btn news__cardnews-content-btn">read</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="swiper-wrapper news__swiper-wrapper"></div>
             <div class="swiper__btn swiper-button-prev news__swiper-button-prev"></div>
             <div class="swiper__btn swiper-button-next news__swiper-button-next"></div>
           </div>
@@ -390,31 +168,6 @@
 
       <footer class="footer">
         <div class="footer__container">
-          <!-- <div class="menu footer-menu">
-            <ul class="menu__list footer__menu-list">
-              <li class="menu__item footer__menu-item">
-                <a href="#editions" class="menu__link footer__menu-link">editions</a>
-              </li>
-              <li class="menu__item footer__menu-item">
-                <a href="#controller" class="menu__link footer__menu-link">controller</a>
-              </li>
-              <li class="menu__item footer__menu-item">
-                <a href="#about" class="menu__link footer__menu-link">about game</a>
-              </li>
-              <li class="menu__item footer__menu-item">
-                <a href="#explore" class="menu__link footer__menu-link">explore</a>
-              </li>
-              <li class="menu__item footer__menu-item"><a href="#news" class="menu__link footer__menu-link">news</a></li>
-              <li class="menu__item footer__menu-item"><a href="#faq" class="menu__link footer__menu-link">FAQ</a></li>
-            </ul>
-            <div class="footer__language-block">
-              <span class="footer__language-title">language</span>
-              <select id="language_footer" class="menu__language footer__menu-language">
-                <option selected value="0">english</option>
-                <option value="1">russian</option>
-              </select>
-            </div>
-          </div> -->
           <div class="footer__description">
             Download of this product is subject to the PlayStation Network Terms of Service and our Software Usage Terms plus any specific additional
             conditions applying to this product. If you do not wish to accept these terms, do not download this product. See Terms of Service for more
@@ -426,6 +179,5 @@
         </div>
       </footer>
     </div>
-    <script src="index.js" defer></script>
   </body>
 </html>
