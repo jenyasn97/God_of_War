@@ -394,7 +394,7 @@ function timer(id, deadline) {
   setClock(id, deadline);
 }
 
-timer(".clock", "2024-03-01");
+timer(".clock", "2025-03-01");
 
 accordionBtns.forEach((btn, index) => {
   btn.addEventListener("click", function (e) {
